@@ -33,6 +33,8 @@
  =========================================================
  */
 
+ //2,3,4,5,6,7,8 dipake
+
 // I2Cdev and MPU6050 must be installed as libraries
 #include "I2Cdev.h"
 #include "MPU6050.h"
