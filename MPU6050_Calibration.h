@@ -19,13 +19,13 @@ private:
 
     void meansensors();
     void calibration();
-    void runCalibrationWithLED(int ledPin = 13);
 
 
 public:
     MPU6050Calibration(uint8_t address = 0x68);
     void begin();
     void runCalibration();
+    void runCalibrationWithLED(int ledPin = 13);
 
     int getAccelXOffset();
     int getAccelYOffset();

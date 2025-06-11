@@ -68,10 +68,10 @@ void setup() {
 
   // Calibrate MPU6050
   mpuCalibration.runCalibrationWithLED(13);
-  mpu.setXGyroOffset(mpuCalibration.getGyroXOffset);
-  mpu.setYGyroOffset(mpuCalibration.getGyroYOffset);
-  mpu.setZGyroOffset(mpuCalibration.getGyroZOffset);
-  mpu.setZAccelOffset(mpuCalibration.getAccelZOffset);
+  mpu.setXGyroOffset(mpuCalibration.getGyroXOffset());
+  mpu.setYGyroOffset(mpuCalibration.getGyroYOffset());
+  mpu.setZGyroOffset(mpuCalibration.getGyroZOffset());
+  mpu.setZAccelOffset(mpuCalibration.getAccelZOffset());
 
   if (devStatus == 0) {
     mpu.setDMPEnabled(true);
